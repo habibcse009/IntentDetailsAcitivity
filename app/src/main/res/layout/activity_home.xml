@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:text="Home Page"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#CDDC39"
+            android:textSize="30sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout3"
+        android:background="@android:drawable/zoom_plate"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_item4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/menuitem_background"
+            android:text="Pizza"
+            android:textColor="@color/colorRed"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/layout2"
+        android:background="@android:drawable/zoom_plate"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_item3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/menuitem_background"
+            android:text="Cake"
+            android:textColor="@color/colorRed"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/layout1"
+        android:background="@android:drawable/zoom_plate"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_item2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/menuitem_background"
+            android:text="Biriyany"
+            android:textColor="@color/colorRed"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:drawable/zoom_plate"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_item1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/menuitem_background"
+            android:text="Burger"
+            android:textColor="@color/colorRed"
+            android:textSize="35sp" />
+    </LinearLayout>
+</RelativeLayout>
